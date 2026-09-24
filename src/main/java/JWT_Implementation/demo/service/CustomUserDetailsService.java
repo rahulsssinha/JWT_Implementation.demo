@@ -1,23 +1,23 @@
-package JWT_Implementation.demo.service;
+// package JWT_Implementation.demo.service;
 
-import JWT_Implementation.demo.repository.UserRepository;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.stereotype.Service;
+// import JWT_Implementation.demo.repository.UserRepository;
+// import org.springframework.security.core.userdetails.UserDetails;
+// import org.springframework.security.core.userdetails.UserDetailsService;
+// import org.springframework.stereotype.Service;
 
-@Service
-public class CustomUserDetailsService implements UserDetailsService {
+// @Service
+// public class CustomUserDetailsService implements UserDetailsService {
 
-    private final UserRepository userRepository;
+//     private final UserRepository userRepository;
 
-    public CustomUserDetailsService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+//     public CustomUserDetailsService(UserRepository userRepository) {
+//         this.userRepository = userRepository;
+//     }
 
-    @Override
-    public UserDetails loadUserByUsername(String email) {
+//     @Override
+//     public UserDetails loadUserByUsername(String email) {
 
-        return userRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("User not found"));
-    }
-}
+//         return userRepository.findByEmail(email)
+//                 .orElseThrow(() -> new RuntimeException("User not found"));
+//     }
+// }

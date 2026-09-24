@@ -10,4 +10,8 @@ public class TestController {
     public String hello() {
         return "Hello Rahul";
     }
+    @GetMapping("/profile")
+public String profile() {
+    return "This is a protected profile";
+}
 }
